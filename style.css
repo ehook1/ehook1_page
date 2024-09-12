@@ -1,13 +1,31 @@
- body {
-  background-color: lightblue;
+/* Basic styling for the entire page */
+body {
+    background-color: #b3e0ff; /* Light blue background */
+    color: #333; /* Dark text color for contrast */
+    font-family: 'Arial', sans-serif; /* Default font for the page */
+    margin: 0;
+    padding: 0;
 }
 
+/* Styling for headers */
 h1 {
-  color: white;
-  text-align: center;
+    color: #ffffff; /* White text color */
+    background-color: #007acc; /* Darker blue background for contrast */
+    text-align: center;
+    padding: 20px; /* Add padding around the header */
+    margin: 0; /* Remove default margin */
+    border-bottom: 5px solid #005999; /* Add a border at the bottom for emphasis */
 }
 
+/* Styling for paragraphs */
 p {
-  font-family: "Monaco", Monospace;
-  font-size: 20px;
-} 
+    font-family: 'Monaco', monospace; /* Monospace font for code-like appearance */
+    font-size: 18px; /* Slightly smaller font size */
+    line-height: 1.6; /* Improve readability with line height */
+    margin: 20px auto; /* Center-align and add margin around paragraphs */
+    padding: 10px; /* Add padding inside the paragraph */
+    max-width: 800px; /* Limit the width for better readability */
+    background-color: #ffffff; /* White background for paragraphs */
+    border-radius: 8px; /* Rounded corners for paragraphs */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card-like effect */
+}
