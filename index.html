@@ -8,9 +8,11 @@
 </head>
 <body>
     <h1>Welcome</h1>
-
-    <img src="maxthumbsup.jpg" alt="Thumbs Up" width="650" height="100" class="spinner">
-
+     <picture> 
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+        <img src="maxthumbsup.jpg" alt="Thumbs Up" width="650" height="100">
+     </picture>
     <div class="button-container">
         <a href="page1.html" class="button">FAQ</a>
         <a href="page2.html" class="button">Test</a>
