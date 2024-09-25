@@ -1,20 +1,11 @@
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
     margin: 0;
     background-color: #b3e0ff;
     color: #333;
     font-family: 'Arial', sans-serif;
-    padding: 0;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: spin 4s linear infinite;
 }
 
 h1 {
@@ -22,22 +13,14 @@ h1 {
     background-color: #007acc;
     text-align: center;
     padding: 20px;
-    margin: 0;
+    margin: 0; /* Remove margin to stick it to the top */
     border-bottom: 5px solid #005999;
-    line-height: 1.2; /* Adjust if needed */
-    font-size: 2.5rem; /* Adjust size if needed */
+    width: 100%; /* Make it full width */
 }
 
-p {
-    font-family: 'Monaco', monospace;
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 20px auto;
-    padding: 10px;
-    max-width: 800px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.button-container {
+    text-align: center; /* Center the buttons */
+    margin: 20px 0;
 }
 
 .button {
@@ -57,15 +40,10 @@ p {
     background-color: #0056b3;
 }
 
-.button-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+.spinner {
+    animation: spin 4s linear infinite;
+    display: block;
+    margin: 20px auto; /* Center the image horizontally */
 }
 
 @keyframes spin {
