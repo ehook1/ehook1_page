@@ -1,38 +1,36 @@
-/* Basic styling for the entire page */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #b3e0ff; /* Light blue background */
-    color: #333; /* Dark text color for contrast */
-    font-family: 'Arial', sans-serif; /* Default font for the page */
+    background-color: #b3e0ff;
+    color: #333;
+    font-family: 'Arial', sans-serif;
     padding: 0;
 }
 
-/* Styling for headers */
 h1 {
-    color: #ffffff; /* White text color */
-    background-color: #007acc; /* Darker blue background for contrast */
+    color: #ffffff;
+    background-color: #007acc;
     text-align: center;
-    padding: 20px; /* Add padding around the header */
-    margin: 0; /* Remove default margin */
-    border-bottom: 5px solid #005999; /* Add a border at the bottom for emphasis */
+    padding: 20px;
+    margin: 0;
+    border-bottom: 5px solid #005999;
 }
 
-/* Styling for paragraphs */
 p {
-    font-family: 'Monaco', monospace; /* Monospace font for code-like appearance */
-    font-size: 18px; /* Slightly smaller font size */
-    line-height: 1.6; /* Improve readability with line height */
-    margin: 20px auto; /* Center-align and add margin around paragraphs */
-    padding: 10px; /* Add padding inside the paragraph */
-    max-width: 800px; /* Limit the width for better readability */
-    background-color: #ffffff; /* White background for paragraphs */
-    border-radius: 8px; /* Rounded corners for paragraphs */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card-like effect */
+    font-family: 'Monaco', monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -50,7 +48,6 @@ p {
     background-color: #0056b3;
 }
 
-/* Position the button container at the bottom */
 .button-container {
     position: fixed;
     bottom: 0;
@@ -61,21 +58,9 @@ p {
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
- .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-} 
 
-
-.spinner {
+.container {
     animation: spin 4s linear infinite;
-    padding: 20px;
-    background: white;
-    border: 2px solid #007BFF;
-    border-radius: 10px;
-    text-align: center;
 }
 
 @keyframes spin {
