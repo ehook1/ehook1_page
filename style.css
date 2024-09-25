@@ -1,7 +1,7 @@
 body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
     margin: 0;
     background-color: #b3e0ff;
     color: #333;
@@ -13,14 +13,13 @@ h1 {
     background-color: #007acc;
     text-align: center;
     padding: 20px;
-    margin: 0;
+    margin: 0; /* Remove margin to stick it to the top */
     border-bottom: 5px solid #005999;
-    width: 100%;
-    transition: transform 0.3s ease; /* Smooth transition */
+    width: 100%; /* Make it full width */
 }
 
 .button-container {
-    text-align: center;
+    text-align: center; /* Center the buttons */
     margin: 20px 0;
 }
 
@@ -44,25 +43,7 @@ h1 {
 .spinner {
     animation: spin 4s linear infinite;
     display: block;
-    margin: 20px auto;
-}
-
-/* Exploding Text Effect */
-h1:hover {
-    animation: explode 0.5s forwards;
-}
-
-@keyframes explode {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.5); /* Grow */
-    }
-    100% {
-        transform: scale(0); /* Shrink to 0 */
-        opacity: 0; /* Fade out */
-    }
+    margin: 20px auto; /* Center the image horizontally */
 }
 
 @keyframes spin {
