@@ -60,7 +60,7 @@ p {
 }
 
 .container {
-    animation: spin 4s linear infinite;
+    animation: spin 50000s linear infinite;
 }
 
 @keyframes spin {
