@@ -1,9 +1,13 @@
 /* Basic styling for the entire page */
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     background-color: #b3e0ff; /* Light blue background */
     color: #333; /* Dark text color for contrast */
     font-family: 'Arial', sans-serif; /* Default font for the page */
-    margin: 0;
     padding: 0;
 }
 
@@ -63,3 +67,22 @@ p {
   margin-right: auto;
   width: 50%;
 } 
+
+
+.spinner {
+    animation: spin 4s linear infinite;
+    padding: 20px;
+    background: white;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
