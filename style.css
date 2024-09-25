@@ -1,11 +1,12 @@
 body {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     background-color: #b3e0ff;
     color: #333;
     font-family: 'Arial', sans-serif;
+    height: 100vh; /* Full viewport height */
 }
 
 h1 {
@@ -13,20 +14,33 @@ h1 {
     background-color: #007acc;
     text-align: center;
     padding: 20px;
-    margin: 0; /* Remove margin to stick it to the top */
+    margin: 0;
     border-bottom: 5px solid #005999;
-    width: 100%; /* Make it full width */
+    width: 100%;
 }
 
+.spinner {
+    animation: spin 4s linear infinite;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Button Container Styling */
 .button-container {
-    text-align: center; /* Center the buttons */
-    margin: 20px 0;
+    position: fixed; /* Fixes the button container at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1; /* Light background for the button bar */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Shadow for depth */
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 0 10px; /* Spacing between buttons */
     background-color: #007bff;
     color: white;
     text-align: center;
@@ -38,12 +52,6 @@ h1 {
 
 .button:hover {
     background-color: #0056b3;
-}
-
-.spinner {
-    animation: spin 4s linear infinite;
-    display: block;
-    margin: 20px auto; /* Center the image horizontally */
 }
 
 @keyframes spin {
