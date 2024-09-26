@@ -37,7 +37,7 @@ h1 {
 }
 
 .spinner {
-    animation: spin 4s linear infinite;
+    animation: spin .04s linear infinite;
     display: block;
     margin: 20px auto;
 }
