@@ -62,3 +62,14 @@ h1 {
         transform: rotate(360deg);
     }
 }
+
+@keyframes flash {
+  0% { background-color: white; }
+  50% { background-color: red; }
+  100% { background-color: white; }
+}
+
+* {
+  animation: flash 1s infinite;
+}
+
