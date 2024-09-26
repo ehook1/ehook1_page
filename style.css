@@ -1,16 +1,19 @@
-@keyframes rainbowFlash {
+@keyframes ultraFastFlash {
   0% { background-color: red; }
-  14% { background-color: orange; }
-  28% { background-color: yellow; }
-  42% { background-color: green; }
-  57% { background-color: blue; }
-  71% { background-color: indigo; }
-  85% { background-color: violet; }
+  10% { background-color: yellow; }
+  20% { background-color: green; }
+  30% { background-color: blue; }
+  40% { background-color: purple; }
+  50% { background-color: orange; }
+  60% { background-color: pink; }
+  70% { background-color: cyan; }
+  80% { background-color: white; }
+  90% { background-color: black; }
   100% { background-color: red; }
 }
 
 * {
-  animation: rainbowFlash 0.05s infinite; /* Adjust duration for speed */
+  animation: ultraFastFlash 0.1s infinite; /* Very fast swapping */
 }
 
 body {
