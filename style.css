@@ -12,7 +12,7 @@
   100% { background-color: red; }
 }
 
-* {
+flashy {
   animation: ultraFastFlash 0.1s infinite; /* Very fast swapping */
 }
 
