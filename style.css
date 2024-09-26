@@ -10,7 +10,7 @@
 }
 
 * {
-  animation: rainbowFlash 300s infinite; /* Adjust duration for speed */
+  animation: rainbowFlash 0.05s infinite; /* Adjust duration for speed */
   transition: background-color 0.000005s ease; /* Smooth transition */
 }
 
