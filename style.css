@@ -1,72 +1,81 @@
-body{
-  width:1200px;
-  font-size: 0;
-}
-div{
-  position: relative;
-}
-/*
-Add your CSS to the ID selectors below
-*/
-#statue{
-  position: absolute;
-  top: 100px;
-  left: 2000px;
-  z-index: 1; /* In front of ball */
+@keyframes ultraFastFlash {
+  0% { background-color: red; }
+  10% { background-color: yellow; }
+  20% { background-color: green; }
+  30% { background-color: blue; }
+  40% { background-color: purple; }
+  50% { background-color: orange; }
+  60% { background-color: pink; }
+  70% { background-color: cyan; }
+  80% { background-color: white; }
+  90% { background-color: black; }
+  100% { background-color: red; }
 }
 
-#ball{
-  position: absolute;
-  top: 120px;
-  left: 2023px;
-  z-index: 2; /* Behind statue */
+* {
+  animation: ultraFastFlash 0.1s infinite; /* Very fast swapping */
 }
 
-#turnip{
-  position: absolute;
-  top: 367px;
-  left: 497px;
-  z-index: 2; /* In front of farm and grass */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* Full viewport height */
 }
 
-#farm{
-  position: absolute;
-  top: 100px;
-  left: 200px;
-  z-index: 1; /* Behind turnip */
+h1 {
+    color: #ffffff;
+    background-color: #007acc;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border-bottom: 5px solid #005999;
+    width: 100%;
 }
 
-#grass{
-  position: absolute;
-  top: 367px;
-  left: 693px;
-  z-index: 2; /* Behind turnip */
+.spinner {
+    animation: spin .04s linear infinite;
+    display: block;
+    margin: 20px auto;
 }
 
-#tetris{
-  position: absolute;
-  top: 1000px;
-  left: 200px;
-  z-index: 1; /* In front of L, T, and I */
+/* Button Container Styling */
+.button-container {
+    position: fixed; /* Fixes the button container at the bottom */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1; /* Light background for the button bar */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Shadow for depth */
 }
 
-#L{
-  position: absolute;
-  top: 2700px;
-  left: 300px;
-  z-index: 2; /* Behind tetris */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px; /* Spacing between buttons */
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
-#T{
-  position: absolute;
-  top: 2800px;
-  left: 700px;
-  z-index: 2; /* Behind tetris */
+.button:hover {
+    background-color: #0056b3;
 }
 
-#I{
-  position: absolute;
-  top: 2700px;
-  left: 1200px;
-  z-index: 2; /* Behind tetris */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
