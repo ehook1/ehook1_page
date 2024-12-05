@@ -1,4 +1,4 @@
-@keyframes ultraFastFlash {
+/* @keyframes ultraFastFlash {
   0% { background-color: red; }
   10% { background-color: yellow; }
   20% { background-color: green; }
@@ -15,7 +15,7 @@
 * {
   animation: ultraFastFlash 0.1s infinite; /* Very fast swapping */
 }
-
+ */
 body {
     display: flex;
     flex-direction: column;
@@ -34,6 +34,9 @@ h1 {
     margin: 0;
     border-bottom: 5px solid #005999;
     width: 100%;
+    font-family: "lores-12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .spinner {
