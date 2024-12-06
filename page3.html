@@ -1,81 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <!--boilerplate code-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Resource Intensive Pop-Ups</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+	<title>Unit One </title>
 </head>
+<h1>FAQ </h1>
+
 <body>
-<script>
-    function createPopUp() {
-        const width = Math.random() * 400 + 200; // Random width between 200 and 600
-        const height = Math.random() * 400 + 200; // Random height between 200 and 600
-        const left = Math.random() * (window.innerWidth - width);
-        const top = Math.random() * (window.innerHeight - height);
-        
-        const popup = window.open("", "_blank", `width=${width},height=${height},left=${left},top=${top}`);
-        if (popup) { // Check if pop-up was successfully created
-            popup.document.write(`
-                <html>
-                <head>
-                    <title>Annoying Pop-Up</title>
-                    <style>
-                        body {
-                            background-color: ${getRandomColor()};
-                            color: white;
-                            font-size: 24px;
-                            text-align: center;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100vh;
-                            margin: 0;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <h1>This is a pop-up!</h1>
-                    <p>You can't close me!</p>
-                    <script>
-                        setInterval(() => {
-                            document.body.style.backgroundColor = "${getRandomColor()}";
-                        }, 500); // Change background color every half second
-                    <\/script>
-                </body>
-                </html>
-            `);
-            // Close the pop-up after 5 seconds (5000 milliseconds)
-            setTimeout(() => {
-                popup.close();
-            }, 5000);
-        } else {
-            alert("Please allow pop-ups for this website.");
-        }
-    }
-
-    function getRandomColor() {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
-
-    // Create multiple pop-ups every second
-    setInterval(createPopUp, 1); // Adjust the interval as needed
-</script>
-    <h1> why are you here</h1>
-
-    <p> please leave</p>
-
-    
+<div class="button-container">
+        <a href="index.html" class="button">HOME</test>
+</div>
 </body>
+
 </html>
