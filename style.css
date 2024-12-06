@@ -40,7 +40,7 @@ font-family: "lores-12", sans-serif;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008000; /* Light background for the button bar */
+    background-color: #ffbd33; /* Light background for the button bar */
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Shadow for depth */
