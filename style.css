@@ -51,7 +51,7 @@ font-family: "lores-12", sans-serif;
     padding: 10px 20px;
     margin: 0 10px; /* Spacing between buttons */
     background-color: #007bff;
-    color:  #C70039 ;
+    color:  #000000;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -59,7 +59,7 @@ font-family: "lores-12", sans-serif;
     transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.button:hover 
     background-color: #0056b3;
 }
 
