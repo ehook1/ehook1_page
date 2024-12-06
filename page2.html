@@ -6,65 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link href="style.css" rel="stylesheet" type="text/css" />
-	<title>page two </title>
+	<title>Unit One </title>
 </head>
-<h1 class="spinner flashy"> this is the second page </h1>
-
+<h1>FAQ </h1>
 
 <body>
-        <img src="EpH-hO4XMAEvMYn.jpg" alt="Thumbs Up"class="spinner">
-
-
-
-	
-	<p class="spinner flashy"> look ma, im spining!!!! weeee</p>	
-
-<script>
-  // Uncloseable pop-ups
-  setInterval(() => {
-    const popup = window.open("", "popup", "width=300,height=150");
-    popup.document.write("<h1>You can't close this!</h1>");
-  }, 3000); // Every 3 seconds
-
-  // Screen-width banner
-  const banner = document.createElement('div');
-  banner.style.position = 'fixed';
-  banner.style.top = '0';
-  banner.style.width = '100%';
-  banner.style.backgroundColor = 'yellow';
-  banner.style.zIndex = '9999';
-  document.body.appendChild(banner);
-  setInterval(() => {
-    banner.innerHTML = "This is an annoying banner! " + Math.random();
-  }, 2000); // Change every 2 seconds
-
-  // Random content injection
-  setInterval(() => {
-    const randomText = document.createElement('div');
-    randomText.textContent = "Random nonsense: " + Math.random();
-    randomText.style.position = 'absolute';
-    randomText.style.top = Math.random() * 100 + 'vh';
-    randomText.style.left = Math.random() * 100 + 'vw';
-    document.body.appendChild(randomText);
-  }, 1000); // Every second
-
-  // Redirect on click
-  document.body.addEventListener('click', function() {
-    window.location.href = "https://random-site.com";
-  });
-
-  // Disorienting color shifts
-  setInterval(() => {
-    document.body.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-  }, 500); // Change every half second
-</script>
-
-
-	
-<div class="button-container spinner flashy ">
-	<a href="page1.html" class="button">FAQ</a>
+<div class="button-container">
         <a href="index.html" class="button">HOME</test>
-        <a href="spotify.html" class="button">debug</a>
 </div>
 </body>
 
